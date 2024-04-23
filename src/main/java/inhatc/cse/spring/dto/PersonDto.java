@@ -1,4 +1,4 @@
-package org.example.Spring.dto;
+package inhatc.cse.spring.dto;
 
 public class PersonDto {
     private String name;

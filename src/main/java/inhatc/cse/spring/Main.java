@@ -1,4 +1,4 @@
-package org.example.Spring;
+package inhatc.cse.spring;
 
 public class Main {
     public static void main(String[] args) {
