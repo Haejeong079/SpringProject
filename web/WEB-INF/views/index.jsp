@@ -12,6 +12,6 @@
 </head>
 <body>
 <h1>시작 페이지</h1>
-<h3>이름 {name}</h3>
+<h3>이름 ${name.age}</h3>
 </body>
 </html>
