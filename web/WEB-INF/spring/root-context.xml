@@ -8,11 +8,12 @@
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <!-- 데이터베이스 이름 및 계정 확인 -->
+    <!-- PostgreSQL DataSource 설정 -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/spring_member?useSSL=false&amp;serverTimezone=Asia/Seoul&amp;allowPublicKeyRetrieval=true" />
-        <property name="username" value="root"/>
-        <property name="password" value="1234"/>
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://localhost:5432/spring_member?currentSchema=public"/>
+        <property name="username" value="postgres"/>
+        <property name="password" value="pgsql1234"/>
     </bean>
 
     <!-- 현재 프로젝트 패키지 경로 맞는지 확인 -->

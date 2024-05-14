@@ -10,6 +10,7 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 public class MemberDto {
+    private int id;
     private String email;
     private String password;
     private String name;

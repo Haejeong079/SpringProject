@@ -5,4 +5,12 @@
     <insert id="save" parameterType="member">
         INSERT INTO member
     </insert>
+    <select id="login" parameterType="member" resultType="member">
+        SELECT *
+        FROM member_table
+        WHERE email = #{email} AND password = #{password}
+    </select>
+    <select id="findAll" resultType="member">
+        SELECT * FROM member_table;
+    </select>
 </mapper>
