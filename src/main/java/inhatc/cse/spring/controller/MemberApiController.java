@@ -25,5 +25,14 @@ public class MemberApiController {
         return new ResponseEntity<>(result, HttpStatus.OK);
 
     }
+    @PostMapping("/save")
+    public ResponseEntity<?> memberInsert(MemberDto memberDto){
+        System.out.println("================" + memberDto);
+        int result = memberService.save(memberDto);
+
+        System.out.println("================" + memberDto);
+        return new ResponseEntity<>(result, HttpStatus.OK);
+
+    }
 
 }
